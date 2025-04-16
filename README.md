@@ -691,6 +691,19 @@ To integrate the React frontend with the Django backend:
 3. Update Django templates to load the React app's index.html as the entry point.
 4. During development, you can run the React development server and Django server concurrently.
 
+## Hotjar Integration
+
+Hotjar has been integrated into the React frontend to track user interactions and gather insights. The Hotjar tracking code is included in the `src/index.js` file of the React application. 
+
+To configure Hotjar:
+1. Ensure the `REACT_APP_HOTJAR_ID` environment variable is set in the `.env` file located in the `frontend` directory.
+   ```plaintext
+   REACT_APP_HOTJAR_ID=XXXXXXXX
+   ```
+2. The tracking code dynamically reads the Hotjar ID from the environment variable and initializes Hotjar.
+
+For more information about Hotjar, visit [https://www.hotjar.com](https://www.hotjar.com).
+
 ## Learn More
 
 To learn more about the technologies used in this project, check out the following resources:
