@@ -7,6 +7,13 @@ import CheckoutSteps from '../components/CheckoutSteps'
 import { createOrder } from '../actions/orderActions'
 import { ORDER_CREATE_RESET } from '../constants/orderConstants'
 
+import Hotjar from '@hotjar/browser';
+
+// Initialize Hotjar
+const siteId = 6373343;
+const hotjarVersion = 6;
+Hotjar.init(siteId, hotjarVersion);
+
 function PlaceOrderScreen() {
     const navigate = useNavigate()
 

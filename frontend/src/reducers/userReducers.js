@@ -35,6 +35,13 @@ import {
 
 } from '../constants/userConstants'
 
+import Hotjar from '@hotjar/browser';
+
+// Initialize Hotjar
+const siteId = 6373343;
+const hotjarVersion = 6;
+Hotjar.init(siteId, hotjarVersion);
+
 export const userLoginReducer = (state = {}, action) => {
   switch (action.type) {
     case USER_LOGIN_REQUEST:

@@ -5,6 +5,13 @@ import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
 import Message from '../components/Message'
 import { addToCart, removeFromCart } from '../actions/cartActions'
 
+import Hotjar from '@hotjar/browser';
+
+// Initialize Hotjar
+const siteId = 6373343;
+const hotjarVersion = 6;
+Hotjar.init(siteId, hotjarVersion);
+
 function CartScreen() {
   const { id: productId } = useParams()
   const location = useLocation()

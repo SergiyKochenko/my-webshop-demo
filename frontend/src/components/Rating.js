@@ -1,5 +1,12 @@
 import React from 'react'
 
+import Hotjar from '@hotjar/browser';
+
+// Initialize Hotjar
+const siteId = 6373343;
+const hotjarVersion = 6;
+Hotjar.init(siteId, hotjarVersion);
+
 function Rating ({ value, text, color }) {
   return (
     <div className='rating'>

@@ -9,6 +9,13 @@ import FormContainer from '../components/FormContainer'
 import { listProductDetails, updateProduct } from '../actions/productActions'
 import { PRODUCT_UPDATE_RESET } from '../constants/productConstants'
 
+import Hotjar from '@hotjar/browser';
+
+// Initialize Hotjar
+const siteId = 6373343;
+const hotjarVersion = 6;
+Hotjar.init(siteId, hotjarVersion);
+
 function ProductEditScreen() {
     const { id: productId } = useParams() 
     const navigate = useNavigate()

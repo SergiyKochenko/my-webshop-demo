@@ -37,6 +37,13 @@ import {
 
   import { ORDER_LIST_MY_RESET } from '../constants/orderConstants'
 
+  import Hotjar from '@hotjar/browser';
+
+// Initialize Hotjar
+const siteId = 6373343;
+const hotjarVersion = 6;
+Hotjar.init(siteId, hotjarVersion);
+
 export const login = (email, password) => async (dispatch) => {
     try {
       dispatch({

@@ -31,6 +31,13 @@ import {
 
 import { CART_CLEAR_ITEMS } from '../constants/cartConstants';
 
+import Hotjar from '@hotjar/browser';
+
+// Initialize Hotjar
+const siteId = 6373343;
+const hotjarVersion = 6;
+Hotjar.init(siteId, hotjarVersion);
+
 export const createOrder = (order) => async (dispatch, getState) => {
     try {
         dispatch({

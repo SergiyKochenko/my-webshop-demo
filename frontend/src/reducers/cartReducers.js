@@ -8,6 +8,13 @@ import {
     CART_CLEAR_ITEMS,
 } from '../constants/cartConstants'
 
+import Hotjar from '@hotjar/browser';
+
+// Initialize Hotjar
+const siteId = 6373343;
+const hotjarVersion = 6;
+Hotjar.init(siteId, hotjarVersion);
+
 export const cartReducer = (state = { cartItems: [], shippingAddress: {} }, action) => {
     switch (action.type) {
         case CART_ADD_ITEM:

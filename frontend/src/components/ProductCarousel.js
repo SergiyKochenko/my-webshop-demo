@@ -6,6 +6,13 @@ import Loader from './Loader'
 import Message from './Message'
 import { listTopProducts } from '../actions/productActions'
 
+import Hotjar from '@hotjar/browser';
+
+// Initialize Hotjar
+const siteId = 6373343;
+const hotjarVersion = 6;
+Hotjar.init(siteId, hotjarVersion);
+
 
 function ProductCarousel() {
     const dispatch = useDispatch()

@@ -2,6 +2,13 @@ import React from 'react';
 import { Pagination } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+import Hotjar from '@hotjar/browser';
+
+// Initialize Hotjar
+const siteId = 6373343;
+const hotjarVersion = 6;
+Hotjar.init(siteId, hotjarVersion);
+
 function Paginate({ pages, page, keyword = '', isAdmin = false }) {
   console.log(page);
   if (keyword) {
