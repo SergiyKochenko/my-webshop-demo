@@ -1,3 +1,9 @@
+# Portfolio Project Ecommerce  - Webstore
+
+This repository contains the source code of eCommerce webstore, a full stack web application developed as a portfolio project Full Stack Software Development (eCommerce). The website can be viewed at <https://my-web-shop-51d10344cd9b.herokuapp.com/#/>.
+
+Amiresponsive is a responsive web application that allows users to browse and purchase products online. The project is built using Django for the backend and React for the frontend, with Redux for state management.
+
 # Ecommerce
 
 This is a full-stack ecommerce application built with Django for the backend and React for the frontend.
