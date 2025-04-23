@@ -128,11 +128,11 @@ WSGI_APPLICATION = "backend.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": 'My-Web-Shop',
-        "USER": 'agency_l47q_user',
-        "PASSWORD": config('DB_PASSWORD'),
-        "HOST": 'dpg-cvfj0s1opnds73batjl0-a.ohio-postgres.render.com',
-        "PORT": '5432',
+        "NAME": config("NAME"),  # Database name
+        "USER": config("USER"),  # Database user
+        "PASSWORD": config("DB_PASSWORD"),  # Database password from environment variable
+        "HOST": config("HOST"),  # Hostname from Render
+        "PORT": "5432",  # Default PostgreSQL port
     }
 }
 
